@@ -1,0 +1,51 @@
+[
+  {
+    "id": 0,
+    "menu": "Menu Sahur",
+    "jam": "04.10",
+    "daftar": [
+      {
+        "id": 0,
+        "judul": "Makanan"
+      },
+      {
+        "id": 1,
+        "judul": "Minuman"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "menu": "Menu Iftar / Buka",
+    "jam": "18.02",
+    "daftar": [
+      {
+        "id": 2,
+        "judul": "Takjil"
+      },
+      {
+        "id": 3,
+        "judul": "Buah"
+      },
+      {
+        "id": 4,
+        "judul": "Minuman"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "menu": "Menu Makan Malam",
+    "jam": "18.40",
+    "daftar": [
+      {
+        "id": 5,
+        "judul": "Makanan"
+      },
+      {
+        "id": 6,
+        "judul": "Minuman"
+      }
+    ]
+  }
+]
