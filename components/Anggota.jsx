@@ -20,6 +20,9 @@ export default function Anggota() {
     <div>
       <Header />
       <div className='py-24 flex flex-col'>
+        <div className="w-full p-3 mb-10 shadow-md rounded-lg flex justify-center items-center">
+          <h1 className="font-bold text-2xl text-[#f59800]">Anggota</h1>
+        </div>
         {
           pengurus.map(peng => {
             return (
@@ -34,9 +37,6 @@ export default function Anggota() {
             )
           })
         }
-        <div className="w-full p-3 mt-10 shadow-md rounded-lg flex justify-center items-center">
-          <h1 className="font-bold text-2xl text-[#f59800]">Anggota</h1>
-        </div>
         <div className="grid grid-cols-3 w-full gap-4 mt-10">
           {
             anggota.map(angg => {

@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "nama": "Sop Ayam Kol",
+      "gambar": "sopayam",
+      "menu": "Sahur",
+      "kategori": "Makanan",
+      "desc": "Sup ayam adalah sup yang terbuat dari ayam, yang dicampur dengan berbagai bahan makanan lainnya. Sup ayam klasik terdiri dari kaldu encer, yang dimasukkan potongan ayam atau sayuran; umumnya ditambahkan dengan pasta (biasanya mi, meskipun berbagai jenis lainnya dapat digunakan), dumpling, atau padi-padian seperti nasi dan jelai. Sup ayam juga biasanya dihidangkan untuk orang yang sakit pilek dan flu",
+      "url": ""
+    }
+  ],
+  [
+    {
+      "nama": "Teh Jahe Anget",
+      "gambar": "tehjahe",
+      "menu": "Sahur",
+      "kategori": "Minuman",
+      "desc": "Teh adalah minuman yang mengandung kafeina, sebuah infusi yang dibuat dengan cara menyeduh daun, pucuk daun, atau tangkai daun yang dikeringkan dari tanaman Camellia sinensis dengan air panas. Teh yang berasal dari tanaman teh dibagi menjadi empat kelompok: teh hitam, teh oolong, teh hijau, dan teh putih. ",
+      "url": ""
+    }
+  ],
+  [
+    {
+      "nama": "Molen Pisang",
+      "gambar": "molen",
+      "menu": "Iftar",
+      "kategori": "Takjil",
+      "desc": "",
+      "url": "https://resepedia.id/resep/molen-pisang"
+    },
+    {
+      "nama": "Kurma Balah",
+      "gambar": "kurma",
+      "menu": "Iftar",
+      "kategori": "Takjil",
+      "desc": "Kurma, (Arab: تمر, Tamr; nama latin Phoenix dactylifera) adalah tanaman palma (Arecaceae) dalam genus Phoenix, buahnya dapat dimakan. Walaupun tempat asalnya tidak diketahui karena telah sejak lama dibudidayakan, kemungkinan tanaman ini berasal dari tanah sekitar Teluk Persia.",
+      "url": ""
+    }
+  ],
+  [
+    {
+      "nama": "Semangka",
+      "gambar": "semangka",
+      "menu": "Iftar",
+      "kategori": "Buah",
+      "desc": "Mencegah dehidrasi Semangka merupakan buah dengan kandungan air yang tinggi yakni mencapai 92 persen, Mencegah kanker, Mencegah penyakit jantung Mencegah peradangan Mencegah penyakit mata",
+      "url": ""
+    },
+    {
+      "nama": "Melon",
+      "gambar": "melon",
+      "menu": "Iftar",
+      "kategori": "Buah",
+      "desc": "",
+      "url": ""
+    }
+  ],
+  [
+    {
+      "nama": "Mangga Susu",
+      "gambar": "susumangga",
+      "menu": "Iftar",
+      "kategori": "Minuman",
+      "desc": "",
+      "url": ""
+    }
+  ],
+  [
+    {
+      "nama": "Ayam Kecap",
+      "gambar": "ayamkecap",
+      "menu": "Makan Malam",
+      "kategori": "Makanan",
+      "desc": "",
+      "url": ""
+    }
+  ],
+  [
+    {
+      "nama": "Es Teh",
+      "gambar": "esteh",
+      "menu": "Makan Malam",
+      "kategori": "Minuman",
+      "desc": "Teh adalah minuman yang mengandung kafeina, sebuah infusi yang dibuat dengan cara menyeduh daun, pucuk daun, atau tangkai daun yang dikeringkan dari tanaman Camellia sinensis dengan air panas. Teh yang berasal dari tanaman teh dibagi menjadi empat kelompok: teh hitam, teh oolong, teh hijau, dan teh putih. ",
+      "url": ""
+    }
+  ]
+]
