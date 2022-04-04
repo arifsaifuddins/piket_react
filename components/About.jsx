@@ -5,11 +5,15 @@ import Navbar from './layouts/Navbar'
 export default function About() {
 
   const [techs, setTechs] = useState([])
+  const [sosials, setSosials] = useState([])
 
   useEffect(() => {
     fetch('../data/tech.json')
       .then(res => res.json())
-      .then(res => setTechs(res))
+      .then(res => {
+        setTechs(res[0])
+        setSosials(res[1])
+      })
   }, [])
 
   return (
@@ -40,18 +44,15 @@ export default function About() {
           <h1 className="font-bold text-2xl text-[#f59800]">Dukung kami di :</h1>
         </div>
         <div className="my-10 w-full flex justify-around items-center">
-          <a target='_blank' href="https://github.com/saifuddien">
-            <img src={`../assets/svg/sosial/github.svg`} alt="icon" className='w-8 h-8 ' />
-          </a>
-          <a target='_blank' href="https://instagram.com/saifuddien_">
-            <img src={`../assets/svg/sosial/instagram.svg`} alt="icon" className='w-8 h-8 ' />
-          </a>
-          <a target='_blank' href="https://wa.me//+24912120879">
-            <img src={`../assets/svg/sosial/whatsapp.svg`} alt="icon" className='w-8 h-8 ' />
-          </a>
-          <a target='_blank' href="https://facebook.com/saifuddien01">
-            <img src={`../assets/svg/sosial/facebook.svg`} alt="icon" className='w-8 h-8 ' />
-          </a>
+          {
+            sosials.map(sosial => {
+              return (
+                <a target='_blank' href={sosial.url}>
+                  <img src={`../assets/svg/sosial/${sosial.name}.svg`} alt={`${sosial.name}`} className='w-8 h-8 ' />
+                </a>
+              )
+            })
+          }
         </div>
         <footer className='text-center'>Created &copy; 2022 | Khartoum</footer>
       </div>
