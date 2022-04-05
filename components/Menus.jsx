@@ -11,7 +11,7 @@ export default function Menus() {
   useEffect(() => {
     setInterval(() => {
       return setNo(Math.ceil(Math.random() * 5).toString())
-    }, '2000')
+    }, 3000)
 
     fetch('./piket.json', {
       headers: {
