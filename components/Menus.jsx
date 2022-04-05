@@ -28,7 +28,7 @@ export default function Menus() {
       <Header />
       <div className='py-20 flex flex-col'>
         <div className="mb-5">
-          <img src={`./slide/ramadhan${no}.jpg`} alt='slide' className='w-full rounded-lg' />
+          <img src={`./slide/ramadhan${no}.jpg`} alt='slide' className='w-full rounded-lg shadow-lg' />
         </div>
         {
           menus.map(menu => {
