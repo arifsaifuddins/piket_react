@@ -26,8 +26,8 @@ export default function About() {
       <Header />
       <div className='py-24'>
         <div className="p-4 text-center">
-          <img src="./icons/icon.png" alt="icon" className='w-72 mx-auto' />
-          <h1 className="mt-5 text-4xl font-extrabold">Piket Sabtu Ramadhan</h1>
+          <img src="./icons/icon.png" alt="icon" className='w-52 mx-auto' />
+          <h1 className="mt-5 text-3xl font-extrabold">Piket Sabtu Ramadhan</h1>
         </div>
         <hr className='border-b-1 w-[98%] mx-auto border-slate-800 ' />
         <div className="w-full p-3 mt-16 shadow-md rounded-lg flex justify-between items-center">

@@ -35,7 +35,7 @@ export default function Menus() {
                   {
                     menu.daftar.map(daf => {
                       return (
-                        <Link to={`/${daf.id}`} key={daf.id}>
+                        <Link to={`../menu/${daf.id}`} key={daf.id}>
                           <div className="p-3 pt-6 text-xl hover:bg-slate-50 rounded-lg hover:text-slate-800 text-[#f59800]">
                             <img src={`./svg/${daf.judul}.svg`} alt="icon" className='w-8  h-8 inline mr-3' />{daf.judul}
                           </div>

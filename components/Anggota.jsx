@@ -42,7 +42,7 @@ export default function Anggota() {
             )
           })
         }
-        <div className="grid grid-cols-3 w-full gap-4 mt-10">
+        <div className="grid grid-cols-2 w-full gap-5 mt-10">
           {
             anggota.map(angg => {
               return (
