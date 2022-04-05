@@ -46,7 +46,7 @@ export default function About() {
           })
         }
         <div className="w-full p-3 mt-20 shadow-md rounded-lg flex justify-center items-center">
-          <h1 className="font-bold text-2xl text-[#f59800]">Dukung kami di :</h1>
+          <h1 className="font-bold text-2xl text-[#f59800]">Temukan kami di :</h1>
         </div>
         <div className="my-10 w-full flex justify-around items-center">
           {
