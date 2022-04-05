@@ -26,9 +26,9 @@ export default function Menus() {
   return (
     <div>
       <Header />
-      <div className='py-24 flex flex-col'>
-        <div className="mb-5 w-full aspect-video">
-          <img src={`./slide/ramadhan${no}.jpg`} alt='slide' className='w-full h-80 rounded-lg' />
+      <div className='py-20 flex flex-col'>
+        <div className="mb-5">
+          <img src={`./slide/ramadhan${no}.jpg`} alt='slide' className='w-full rounded-lg' />
         </div>
         {
           menus.map(menu => {

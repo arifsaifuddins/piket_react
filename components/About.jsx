@@ -24,7 +24,7 @@ export default function About() {
   return (
     <div>
       <Header />
-      <div className='py-24'>
+      <div className='py-20'>
         <div className="p-4 text-center">
           <img src="./icons/icon.png" alt="icon" className='w-52 mx-auto' />
           <h1 className="mt-5 text-3xl font-extrabold">Piket Sabtu Ramadhan</h1>

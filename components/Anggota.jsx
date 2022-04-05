@@ -24,7 +24,7 @@ export default function Anggota() {
   return (
     <div>
       <Header />
-      <div className='py-24 flex flex-col'>
+      <div className='py-20 flex flex-col'>
         <div className="w-full p-3 mb-10 shadow-md rounded-lg flex justify-center items-center">
           <h1 className="font-bold text-2xl text-[#f59800]">Anggota</h1>
         </div>

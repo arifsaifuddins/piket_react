@@ -22,7 +22,7 @@ export default function Menu() {
   }, [])
 
   return (
-    <div className='py-24 flex flex-col'>
+    <div className='py-20 flex flex-col'>
       <Header />
       {
         menus.map(menu => {
