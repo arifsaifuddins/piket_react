@@ -8,7 +8,12 @@ export default function Menus() {
   const [menus, setMenus] = useState([])
 
   useEffect(() => {
-    fetch('../data/piket.json')
+    fetch('./piket.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
       .then(res => res.json())
       .then(res => setMenus(res))
   }, [])
@@ -30,9 +35,9 @@ export default function Menus() {
                   {
                     menu.daftar.map(daf => {
                       return (
-                        <Link to={`/menu/${daf.id}`} key={daf.id}>
+                        <Link to={`/${daf.id}`} key={daf.id}>
                           <div className="p-3 pt-6 text-xl hover:bg-slate-50 rounded-lg hover:text-slate-800 text-[#f59800]">
-                            <img src={`../assets/svg/${daf.judul}.svg`} alt="icon" className='w-8  h-8 inline mr-3' />{daf.judul}
+                            <img src={`./svg/${daf.judul}.svg`} alt="icon" className='w-8  h-8 inline mr-3' />{daf.judul}
                           </div>
                           <hr className='border-b-1 mb-2 w-[98%] mx-auto border-slate-800 ' />
                         </Link>

@@ -8,7 +8,12 @@ export default function About() {
   const [sosials, setSosials] = useState([])
 
   useEffect(() => {
-    fetch('../data/tech.json')
+    fetch('./tech.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
       .then(res => res.json())
       .then(res => {
         setTechs(res[0])
@@ -21,7 +26,7 @@ export default function About() {
       <Header />
       <div className='py-24'>
         <div className="p-4 text-center">
-          <img src="../assets/icons/icon.png" alt="icon" className='w-72 mx-auto' />
+          <img src="./icons/icon.png" alt="icon" className='w-72 mx-auto' />
           <h1 className="mt-5 text-4xl font-extrabold">Piket Sabtu Ramadhan</h1>
         </div>
         <hr className='border-b-1 w-[98%] mx-auto border-slate-800 ' />
@@ -33,7 +38,7 @@ export default function About() {
             return (
               <a target='_blank' href={tech.url} key={tech.name}>
                 <div className="p-3 pt-6 text-xl">
-                  <img src={`../assets/logo/${tech.icon}.png`} alt="icon" className='w-8  h-8 inline mr-3' />{tech.name}
+                  <img src={`./logo/${tech.icon}.png`} alt="icon" className='w-8  h-8 inline mr-3' />{tech.name}
                 </div>
                 <hr className='border-b-1 w-[98%] mx-auto border-slate-800 ' />
               </a>
@@ -47,8 +52,8 @@ export default function About() {
           {
             sosials.map(sosial => {
               return (
-                <a target='_blank' href={sosial.url}>
-                  <img src={`../assets/svg/sosial/${sosial.name}.svg`} alt={`${sosial.name}`} className='w-8 h-8 ' />
+                <a target='_blank' href={sosial.url} key={sosial.name}>
+                  <img src={`./svg/sosial/${sosial.name}.svg`} alt={`${sosial.name}`} className='w-8 h-8 ' />
                 </a>
               )
             })
