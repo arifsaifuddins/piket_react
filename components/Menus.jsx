@@ -39,7 +39,7 @@ export default function Menus() {
                   <h1 className="font-bold text-2xl">{menu.menu}</h1>
                   <div className="bg-[#f59800] shadow-lg h-full px-6 py-3 font-extrabold text-2xl rounded-lg text-white">{menu.jam}</div>
                 </div>
-                <div className='mb-20 mt-6'>
+                <div className='mb-10 mt-6'>
                   {
                     menu.daftar.map(daf => {
                       return (

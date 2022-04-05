@@ -16,7 +16,7 @@
   },
   {
     "id": 1,
-    "menu": "Menu Iftar / Buka",
+    "menu": "Menu Iftar",
     "jam": "18.02",
     "daftar": [
       {
@@ -35,7 +35,7 @@
   },
   {
     "id": 2,
-    "menu": "Menu Makan Malam",
+    "menu": "Menu Malam",
     "jam": "18.40",
     "daftar": [
       {
