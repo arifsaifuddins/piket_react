@@ -6,8 +6,6 @@ import Navbar from './layouts/Navbar'
 export default function Menu() {
 
   const { id } = useParams()
-  const navigate = useNavigate()
-
   const [menus, setMenus] = useState([])
 
   useEffect(() => {
@@ -29,7 +27,7 @@ export default function Menu() {
           return (
             <div key={menu.nama}>
               <div className='text-xl mb-5 flex items-center'>
-                <img onClick={() => navigate('/menu')} src="../svg/navbar/back.svg" alt="icon" className='w-5 cursor-pointer inline mr-3' />{`${menu.menu} - ${menu.kategori} - ${menu.nama}`}
+                <img onClick={() => window.history.back()} src="../svg/navbar/back.svg" alt="icon" className='w-5 cursor-pointer inline mr-3' />{`${menu.menu} - ${menu.kategori} - ${menu.nama}`}
               </div>
               <img src={`../menu/${menu.gambar}.jpeg`} alt={`${menu.gambar}`} className='w-full rounded-lg mb-4' />
               <h1 className="font-bold text-3xl text-[#f59800] mb-4">{menu.nama}</h1>
