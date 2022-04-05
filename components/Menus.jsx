@@ -6,8 +6,13 @@ import Navbar from './layouts/Navbar'
 export default function Menus() {
 
   const [menus, setMenus] = useState([])
+  const [no, setNo] = useState('1')
 
   useEffect(() => {
+    setInterval(() => {
+      return setNo(Math.ceil(Math.random() * 5).toString())
+    }, '2000')
+
     fetch('./piket.json', {
       headers: {
         'Content-Type': 'application/json',
@@ -22,6 +27,9 @@ export default function Menus() {
     <div>
       <Header />
       <div className='py-24 flex flex-col'>
+        <div className="mb-5 w-full aspect-video">
+          <img src={`./slide/ramadhan${no}.jpg`} alt='slide' className='w-full h-80 rounded-lg' />
+        </div>
         {
           menus.map(menu => {
 
