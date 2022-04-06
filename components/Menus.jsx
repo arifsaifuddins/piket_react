@@ -11,7 +11,7 @@ export default function Menus() {
   useEffect(() => {
     setInterval(() => {
       return setNo(Math.ceil(Math.random() * 5).toString())
-    }, 2500)
+    }, 3000)
 
     fetch('./piket.json', {
       headers: {
@@ -32,12 +32,11 @@ export default function Menus() {
         </div>
         {
           menus.map(menu => {
-
             return (
               <div className="flex flex-col" key={menu.id}>
-                <div className="w-full p-3 shadow-md rounded-lg flex justify-between items-center">
-                  <h1 className="font-bold text-2xl">{menu.menu}</h1>
-                  <div className="bg-[#f59800] shadow-lg h-full px-6 py-3 font-extrabold text-2xl rounded-lg text-white">{menu.jam}</div>
+                <div className="w-full p-6 shadow-md rounded-lg flex justify-between items-center">
+                  <h1 className="font-bold text-2xl text-[#f59800]">{menu.menu}</h1>
+                  <img src={`./svg/navbar/${menu.icon}.svg`} alt="icon" className='w-8 h-8' />
                 </div>
                 <div className='mb-10 mt-6'>
                   {

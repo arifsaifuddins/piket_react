@@ -4,6 +4,7 @@ import Anggota from '../components/Anggota'
 import Error from '../components/layouts/Error'
 import Menu from '../components/Menu'
 import Menus from '../components/Menus'
+import Shalat from '../components/Shalat'
 import Welcome from '../components/Welcome'
 
 
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Welcome />} />
           <Route path="/menu" element={<Menus />} />
           <Route path="/about" element={<About />} />
+          <Route path="/shalat" element={<Shalat />} />
           <Route path="/anggota" element={<Anggota />} />
           <Route path="/menu/:id" element={<Menu />} />
           <Route path="*" element={<Error />} />

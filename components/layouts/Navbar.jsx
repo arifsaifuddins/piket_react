@@ -19,6 +19,10 @@ export default function Navbar() {
         <img src='../svg/navbar/users.svg' alt="anggota" className='w-6 h-6' />
         <h3 className='text-sm'>Anggota</h3>
       </NavLink>
+      <NavLink to={'/shalat'} style={active} className='flex flex-col items-center'>
+        <img src='../svg/navbar/shalat.svg' alt="anggota" className='w-6 h-6' />
+        <h3 className='text-sm'>Shalat</h3>
+      </NavLink>
       <NavLink to={'/about'} style={active} className='flex flex-col items-center'>
         <img src='../svg/navbar/about.svg' alt="about" className='w-6 h-6' />
         <h3 className='text-sm'>Tentang</h3>

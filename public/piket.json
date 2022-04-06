@@ -2,7 +2,7 @@
   {
     "id": 0,
     "menu": "Menu Sahur",
-    "jam": "04.10",
+    "icon": "sun",
     "daftar": [
       {
         "id": 0,
@@ -17,7 +17,7 @@
   {
     "id": 1,
     "menu": "Menu Iftar",
-    "jam": "18.02",
+    "icon": "mosque",
     "daftar": [
       {
         "id": 2,
@@ -36,7 +36,7 @@
   {
     "id": 2,
     "menu": "Menu Malam",
-    "jam": "18.40",
+    "icon": "moon",
     "daftar": [
       {
         "id": 5,
