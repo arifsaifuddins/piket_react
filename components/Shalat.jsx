@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useAlert } from 'react-alert'
 import Jadwal from './Jadwal'
 import Header from './layouts/Header'
 import Navbar from './layouts/Navbar'
@@ -7,26 +8,51 @@ export default function Shalat() {
 
   const [kota, setKota] = useState('Khartoum')
   const [negara, setNegara] = useState('Sudan')
-  const [jadwal, setJadwal] = useState([])
-  const kot = document.querySelector('.kota')
-  const neg = document.querySelector('.neg')
 
-  useEffect(() => { fetchData() }, [])
+  const [kotaLoc, setKotaLoc] = useState('Khartoum')
+  const [negaraLoc, setNegaraLoc] = useState('Sudan')
+
+  const [cuaca, setCuaca] = useState(30)
+  const [jadwal, setJadwal] = useState([])
+
+  const alert = useAlert()
+
+  useEffect(() => {
+    fetchData()
+    fetchWeather()
+  }, [])
+
+  const fetchWeather = async () => {
+    return await fetch(`http://api.weatherapi.com/v1/current.json?key=c9ce1b8c35d04ec4bfe171021220801&q=${kota}`)
+      .then(res => res.json())
+      .then(res => {
+        setCuaca(res.current.temp_c)
+        setKotaLoc(res.location.name)
+        setNegaraLoc(res.location.country)
+      })
+  }
 
   const fetchData = async () => {
     return await fetch(`https://api.aladhan.com/v1/timingsByCity?city=${kota}&country=${negara}`)
       .then(res => res.json())
       .then(res => {
+
+        const kot = document.querySelector('.kota')
+        const neg = document.querySelector('.neg')
+
         if (res.code == '200') {
+          fetchWeather()
           setJadwal(res.data.timings)
           kot.value = ''
           neg.value = ''
         } else if (res.code == '400') {
+          alert.show(
+            <div className='bg-white fixed text-black p-3 rounded-lg shadow-lg z-10 w-full left-0 bottom-5  text-center'>
+              <h1 className='text-2xl text-red-600 font-bold lowercase first-letter:uppercase'>Error !</h1>
+              <div className='mt-3 lowercase first-letter:uppercase font-bold text-lg text-[#f59800]'>Kota atau Negara tidak ada,<br />coba lokasi lain...</div>
+            </div>)
           kot.value = ''
           neg.value = ''
-          setKota('Khartoum')
-          setNegara('Sudan')
-          alert('Kota atau Negara tidak ada!, Coba lain')
         } else {
           setJadwal(res.data.timings)
         }
@@ -38,8 +64,9 @@ export default function Shalat() {
       <Header />
       <div className='py-20 flex flex-col'>
         <div className="p-4 text-center">
-          <h1 className=" text-4xl font-extrabold">Jadwal Shalat</h1>
-          <h1 className="text-xl text-[#f59800] mt-3">{`Wilayah ${kota}, ${negara}`}</h1>
+          <h1 className='text-8xl mb-8 font-bold w-full'>{Math.ceil(parseInt(cuaca))} <div className="text-4xl align-top inline">&deg;</div>c</h1>
+          <h1 className="text-xl text-[#f59800] mb-4">{`Wilayah ${kotaLoc}, ${negaraLoc}`}</h1>
+          <h1 className="text-4xl font-extrabold">Jadwal Shalat | Cuaca</h1>
         </div>
         <hr className='border-b-1 w-[98%] my-6 mx-auto border-slate-800 ' />
         <div className='flex flex-col'>
