@@ -23,7 +23,7 @@ export default function Shalat() {
   }, [])
 
   const fetchWeather = async () => {
-    return await fetch(`http://api.weatherapi.com/v1/current.json?key=c9ce1b8c35d04ec4bfe171021220801&q=${kota}`)
+    return await fetch(`https://api.weatherapi.com/v1/current.json?key=c9ce1b8c35d04ec4bfe171021220801&q=${kota}`)
       .then(res => res.json())
       .then(res => {
         setCuaca(res.current.temp_c)
@@ -66,7 +66,7 @@ export default function Shalat() {
         <div className="p-4 text-center">
           <h1 className='text-8xl mb-8 font-bold w-full'>{Math.ceil(parseInt(cuaca))} <div className="text-4xl align-top inline">&deg;</div>c</h1>
           <h1 className="text-xl text-[#f59800] mb-4">{`Wilayah ${kotaLoc}, ${negaraLoc}`}</h1>
-          <h1 className="text-4xl font-extrabold">Jadwal Shalat | Cuaca</h1>
+          <h1 className="text-4xl font-extrabold">Shalat | Cuaca</h1>
         </div>
         <hr className='border-b-1 w-[98%] my-6 mx-auto border-slate-800 ' />
         <div className='flex flex-col'>
