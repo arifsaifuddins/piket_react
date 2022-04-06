@@ -8,7 +8,7 @@ export default function Welcome() {
       <div className="w-full p-5 text-center">
         <h3 className='font-semibold my-5 text-2xl'>Hai, Semua...</h3>
         <h4 className="mb-10 text-2xl" >Selamat datang di Piket Sabtu</h4>
-        <Link to={'/menu'} className='bg-[#f59800] p-4 rounded-md text-white font-extrabold w-full block shadow-lg'>Lihat Menu Puasa</Link>
+        <Link to={'/menu'} className='bg-[#f59800] p-4 rounded-md text-white font-extrabold w-full block shadow-lg text-2xl'>Lihat Menu Puasa</Link>
       </div>
     </div>
   )

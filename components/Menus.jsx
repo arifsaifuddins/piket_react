@@ -35,7 +35,7 @@ export default function Menus() {
             return (
               <div className="flex flex-col" key={menu.id}>
                 <div className="w-full p-6 shadow-md rounded-lg flex justify-between items-center">
-                  <h1 className="font-bold text-2xl text-[#f59800]">{menu.menu}</h1>
+                  <h1 className="font-bold text-3xl text-[#f59800]">{menu.menu}</h1>
                   <img src={`./svg/navbar/${menu.icon}.svg`} alt="icon" className='w-8 h-8' />
                 </div>
                 <div className='mb-10 mt-6'>
