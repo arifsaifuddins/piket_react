@@ -19,7 +19,6 @@ export default function Shalat() {
 
   useEffect(() => {
     fetchData()
-    fetchWeather()
   }, [])
 
   const fetchWeather = async () => {
