@@ -35,7 +35,7 @@ export default function Shalat() {
         </div>
         <div className="mt-10 w-full flex">
           <input type="text" className='p-3 text-xl outline-none focus:border-[#f59800] border w-[50%] mr-2 shadow rounded-lg border-slate-800 kota' placeholder='Kota...' required onChange={(e) => setKota(e.target.value)} />
-          <input type="text" className='p-3 text-xl outline-none focus:border-[#f59800] border w-[50%] ml-2 shadow rounded-lg border-slate-800 neg' placeholder='Neagara...' required onChange={(e) => setNegara(e.target.value)} />
+          <input type="text" className='p-3 text-xl outline-none focus:border-[#f59800] border w-[50%] ml-2 shadow rounded-lg border-slate-800 neg' placeholder='Negara...' required onChange={(e) => setNegara(e.target.value)} />
         </div>
         <div className="mt-4 bg-[#f59800] hover:bg-[#f58500] p-3 shadow rounded-lg text-center font-bold text-2xl text-white cursor-pointer" onClick={() => fetchData()}>Ubah Lokasi</div>
       </div>
