@@ -27,7 +27,7 @@ export default function Shalat() {
       <div className='py-20 flex flex-col'>
         <div className="p-4 text-center">
           <h1 className=" text-4xl font-extrabold">Jadwal Shalat</h1>
-          <h1 className="text-2xl mt-3">{`Wilayah ${kota}, ${negara}`}</h1>
+          <h1 className="text-xl mt-3">{`Wilayah ${kota}, ${negara}`}</h1>
         </div>
         <hr className='border-b-1 w-[98%] my-6 mx-auto border-slate-800 ' />
         <div className='flex flex-col'>
