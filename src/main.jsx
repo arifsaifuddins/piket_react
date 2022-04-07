@@ -6,7 +6,7 @@ import './index.css'
 import App from './App'
 
 const options = {
-  position: positions.TOP_CENTER,
+  position: positions.BOTTOM_CENTER,
   timeout: 3000,
   offset: '30px',
   transition: transitions.SCALE
