@@ -65,7 +65,7 @@ export default function Shalat() {
         <div className="p-4 text-center">
           <h1 className='text-8xl mb-8 font-bold w-full'>{Math.ceil(parseInt(cuaca))} <div className="text-4xl align-top inline">&deg;</div>c</h1>
           <h1 className="text-xl text-[#f59800] mb-4">{`Wilayah ${kotaLoc}, ${negaraLoc}`}</h1>
-          <h1 className="text-4xl font-extrabold">Shalat | Cuaca <img src="../svg/navbar/rotate.svg" className='w-8 inline ml-2 cursor-pointer' onClick={() => window.location.href = 'https://piketsabtu.netlify.app/shalat/'} alt="refresh" /></h1>
+          <h1 className="text-4xl font-extrabold">Shalat | Cuaca <img src="../svg/navbar/rotate.svg" className='w-8 inline ml-2 cursor-pointer' onClick={() => window.location.href = '/shalat'} alt="refresh" /></h1>
         </div>
         <hr className='border-b-1 w-[98%] my-6 mx-auto border-slate-800 ' />
         <div className='flex flex-col'>
