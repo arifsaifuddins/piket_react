@@ -1,0 +1,22 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Piket Sabtu",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "piketsabtu.netlify",
+  "start_url": "/",
+  "theme_color": "#f59800",
+  "icons": [
+    {
+      "src": "images/800x800.png",
+      "type": "image/png",
+      "sizes": "800x800"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ]
+}

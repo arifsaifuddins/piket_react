@@ -6,12 +6,19 @@
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <meta name="theme-color" content="#f59800">
   <link rel="shortcut icon" href="./icons/icon.png" type="image/x-icon">
+  <link rel="manifest" href="manifest.json" />
   <title>Piket Sabtu</title>
+  <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+  </script>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="./src/main.jsx"></script>
+  <script type="module" src="./pwabuilder-sw.js"></script>
 </body>
 
 </html>
